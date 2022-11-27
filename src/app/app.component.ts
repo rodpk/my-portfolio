@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-portfolio';
+
+  current_page = 'home';
+
+  changePage(page: string) {
+    this.current_page = page;
+  }
 }
